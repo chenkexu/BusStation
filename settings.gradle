@@ -1,0 +1,1 @@
+include ':app', ':baidumapdemo', ':wxhlcorelibrary', ':photopicker', ':photopickerDemo', ':library:common', ':CoordinatorLayoutDemo', ':oordinatorLayout'

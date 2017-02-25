@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WxhlCoreLibrary</string>
+
+    <string name="msg_now">刚刚</string>
+    <string name="msg_today">今天</string>
+    <string name="msg_yesterday">昨天</string>
+    <string name="msg_few_minutes_ago">分钟前</string>
+</resources>

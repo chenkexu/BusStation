@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_water_blue_round_small" android:state_enabled="true"/>
+    <item android:drawable="@drawable/shape_light_gray_round_small" android:state_enabled="false"/>
+
+</selector>

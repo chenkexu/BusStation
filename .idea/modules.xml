@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BusStation.iml" filepath="$PROJECT_DIR$/BusStation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CoordinatorLayoutDemo/CoordinatorLayoutDemo.iml" filepath="$PROJECT_DIR$/CoordinatorLayoutDemo/CoordinatorLayoutDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baidumapdemo/baidumapdemo.iml" filepath="$PROJECT_DIR$/baidumapdemo/baidumapdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/common/common.iml" filepath="$PROJECT_DIR$/library/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oordinatorLayout/oordinatorLayout.iml" filepath="$PROJECT_DIR$/oordinatorLayout/oordinatorLayout.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photopicker/photopicker.iml" filepath="$PROJECT_DIR$/photopicker/photopicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/photopickerDemo/photopickerDemo.iml" filepath="$PROJECT_DIR$/photopickerDemo/photopickerDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wxhlcorelibrary/wxhlcorelibrary.iml" filepath="$PROJECT_DIR$/wxhlcorelibrary/wxhlcorelibrary.iml" />
+    </modules>
+  </component>
+</project>

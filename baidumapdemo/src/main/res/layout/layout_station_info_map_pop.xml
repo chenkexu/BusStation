@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6.25dp"
+        android:background="@drawable/shape_gradient_horizontal"/>
+
+    <RelativeLayout
+
+        android:id="@+id/rl_station_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="10dp"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6.25dp"
+            android:layout_weight="7"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="三优电桩"
+            android:textColor="@color/text_gray_dark"
+            android:textSize="24dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_station_progres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="已经发电"
+            android:textColor="@color/red"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/tv_name"
+            android:layout_alignLeft="@+id/tv_name"
+            android:layout_alignStart="@+id/tv_name" />
+
+        <ImageView
+            android:id="@+id/iv_pile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_name"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/hssy_default"/>
+
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tv_station_progres"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="6dp"
+            android:layout_toLeftOf="@+id/iv_pile_image"
+            android:layout_toStartOf="@+id/iv_pile_image"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:text="海珠区江南大道中325号首层之一xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/tv_location"
+            android:layout_alignLeft="@+id/tv_location"
+            android:layout_alignRight="@+id/tv_location"
+            android:layout_alignStart="@+id/tv_location"
+            android:layout_below="@id/tv_location"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="距离1.2公里"
+            android:textColor="@color/text_gray"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/rl_station_info"
+        android:background="@color/pile_info_map_pop_bottom_color">
+
+        <View
+            android:id="@+id/top_splite_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentTop="true"
+            android:background="@color/pile_info_map_pop_splite_line_color"/>
+
+        <LinearLayout
+            android:id="@+id/ll_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/top_splite_line"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <Button
+                android:id="@+id/btn_book_charge"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_water_blue_light_gray_round_small"
+                android:text="直流桩8 交流桩9"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/btn_navigation"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_water_blue_light_gray_round_small"
+                android:text="导航"
+                android:textColor="#ffffff"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_station_info"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginLeft="@dimen/w10"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="直流桩xxx个，交流桩xxx个"-->
+        <!--android:textColor="@color/text_gray"-->
+        <!--android:textSize="@dimen/h13"/>-->
+    </RelativeLayout>
+
+</LinearLayout>

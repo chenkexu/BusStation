@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--能够接受触摸或者点击事件：false：不接受触摸顯示顔色-->
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:startColor="@color/gray" android:endColor="@color/gray"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <!--按下的顔色-->
+    <item android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/gray" android:endColor="@color/gray"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <!--正常顔色-->
+    <item>
+        <shape>
+            <gradient android:startColor="?attr/colorPrimary"
+                android:endColor="?attr/colorPrimary"/>
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+</selector>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item android:drawable="@color/gray" android:state_enabled="false" />-->
+    <!--&lt;!&ndash;<item android:drawable="@color/red" />&ndash;&gt;-->
+    <!--<item android:color="?attr/colorPrimary"/>-->
+<!--</selector>-->

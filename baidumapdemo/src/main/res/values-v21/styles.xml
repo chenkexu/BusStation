@@ -1,0 +1,13 @@
+<resources>
+    <style name="AppTheme" parent="BaseAppTheme">
+        <!--导航栏中背景色-->
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <!--设置状态栏中的背景色，与colorPrimaryDark设置效果一样，区别：android:statusBarColor需要设置V21支持-->
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--CardView样式-->
+    <style name="cardview_style">
+        <item name="android:background">?android:attr/selectableItemBackground</item>
+    </style>
+</resources>

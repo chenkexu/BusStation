@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+  <!--  <RadioGroup android:id="@+id/rg_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"  android:padding="5dp">
+        <RadioButton android:text="微信"  android:id="@+id/rb_weixin"
+                     style="@style/rb_bottom_style" android:drawableTop="@drawable/btn_weixin_sele"
+                     android:checked="true"/>
+        <RadioButton android:text="通讯录"  android:id="@+id/rb_contact"
+                     style="@style/rb_bottom_style" android:drawableTop="@drawable/btn_contact_sele"/>
+        <RadioButton android:text="发现" android:id="@+id/rb_find"
+                     style="@style/rb_bottom_style" android:drawableTop="@drawable/btn_find_sele"/>
+        <RadioButton android:text="我"  android:id="@+id/rb_me"
+                     style="@style/rb_bottom_style" android:drawableTop="@drawable/btn_me_sele"/>
+    </RadioGroup>-->
+
+
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </android.support.v4.view.ViewPager>
+
+
+
+</RelativeLayout>
