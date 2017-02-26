@@ -19,7 +19,7 @@ import hssychargingpole.xpg.com.baidumapdemo.R;
 import hssychargingpole.xpg.com.baidumapdemo.view.signcalendarView.CalendarView;
 
 public class SignActivity extends AppCompatActivity implements View.OnClickListener, CalendarView.OnItemClickListener {
-
+    private int a;
     // 定义共享优先数据及基础字段
     private String MY_RMBCost = "MY_RMBCost";
 
