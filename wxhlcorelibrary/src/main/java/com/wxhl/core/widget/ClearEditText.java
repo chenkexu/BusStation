@@ -12,12 +12,12 @@ import com.wxhl.core.R;
 public class ClearEditText extends EditText {
 
 	private Drawable mClearDrawable;
-//	private Drawable leftSearchIcon;
+	private Drawable leftSearchIcon;
 
 	public ClearEditText(Context paramContext, AttributeSet paramAttributeSet) {
 		super(paramContext, paramAttributeSet);
 
-//		leftSearchIcon = getCompoundDrawables()[0]; //获取第一个控件，通过下标获取
+		leftSearchIcon = getCompoundDrawables()[0]; //获取第一个控件，通过下标获取
 		mClearDrawable = getCompoundDrawables()[2];
 		if (mClearDrawable == null) {
 			mClearDrawable = getResources().getDrawable(R.drawable.core_delete_selector);
@@ -48,11 +48,11 @@ public class ClearEditText extends EditText {
 	 */
 	@Override
 	public boolean onPreDraw() {
-//		if (TextUtils.isEmpty(getText())) {
-//			setCompoundDrawables(leftSearchIcon, null, null, null);
-//		} else {
-//			setCompoundDrawables(leftSearchIcon, null, rightDeleteIcon, null);
-//		}
+		if (TextUtils.isEmpty(getText())) {
+			setCompoundDrawables(leftSearchIcon, null, null, null);
+		} else {
+			setCompoundDrawables(leftSearchIcon, null, leftSearchIcon, null);
+		}
 		if (TextUtils.isEmpty(getText())) {
 			setCompoundDrawables(null, null, null, null);
 		} else {

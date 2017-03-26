@@ -1,6 +1,7 @@
 package hssychargingpole.xpg.com.baidumapdemo.fragment;
 
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -26,6 +27,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import hssychargingpole.xpg.com.baidumapdemo.R;
+import hssychargingpole.xpg.com.baidumapdemo.activity.ArticleActivity;
 import hssychargingpole.xpg.com.baidumapdemo.adapter.NewsAdapter;
 import hssychargingpole.xpg.com.baidumapdemo.api.RequestAPI;
 import hssychargingpole.xpg.com.baidumapdemo.bean.featured.FeaturedVo;
@@ -55,7 +57,7 @@ public class FragmentWeixin extends BaseFragment implements  SwipeRefreshLayout.
 	}
 
 	@Override
-	public void builderView(View rootView) {
+	public void builderView(View rootView) {getAbstractActivity().getToolbar().setVisibility(View.VISIBLE);
 		L.e("builderView_FragmentMe执行了！！");
 		getAbstractActivity().setActionBarTitle("新闻列表");
 
@@ -84,6 +86,7 @@ public class FragmentWeixin extends BaseFragment implements  SwipeRefreshLayout.
 			@Override
 			public void SimpleOnItemClick(BaseQuickAdapter adapter, View view, int positnion) {
 				T.show(getMyApplication(),"条目被点击了一下",1);
+				startActivity(new Intent(getAbstractActivity(), ArticleActivity.class));
 			}
 
 			//整个条目条目的长按事件

@@ -2,6 +2,7 @@ package com.wxhl.core.utils;
 
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.os.Build;
 import android.os.Environment;
 
 import com.wxhl.core.activity.CoreApplication;
@@ -366,5 +367,41 @@ public class FileUtil {
 		return fileSizeString;
 	}
 
-	
+	/**
+	 *  获取缓存路径
+	 */
+	public static String getCacheDir(Context context) {
+		String cacheDir;
+		if(FileUtil.isExistSD()){
+			//SD存在
+			cacheDir = FileUtil.getSDCacheDir(context);
+		}else{
+			//不存在则使用系统目录
+			cacheDir = context.getCacheDir().getPath();
+		}
+		cacheDir+="/";
+		L.e("----缓存目录---->>>:" + cacheDir);
+
+//		checkDir(cacheDir);
+		return cacheDir;
+	}
+
+
+	/**
+	 * @Description: 获取当前应用SD卡缓存目录
+	 * @param context
+	 * @return
+	 */
+	public static String getSDCacheDir(Context context) {
+		//api大于8的版本
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO) {
+			//目录为/mnt/sdcard/Android/data/com.mt.mtpp/cache
+			return context.getExternalCacheDir().getPath();
+		}
+		String cacheDir = "/Android/data/" + context.getPackageName() + "/cache";
+		return Environment.getExternalStorageDirectory().getPath() + cacheDir;
+
+//		return getCacheDirectory(context,true);
+	}
+
 }

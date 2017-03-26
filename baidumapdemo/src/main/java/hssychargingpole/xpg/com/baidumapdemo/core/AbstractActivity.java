@@ -40,6 +40,10 @@ public abstract class AbstractActivity extends BaseActivity {
         return (MyApplication)getApplication();
     }
 
+    protected void addAnim(){
+        overridePendingTransition(R.anim.slide_left_in, R.anim.slide_right_out);
+    }
+
     /**
      * 切换Fragment
      * @param to

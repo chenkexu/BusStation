@@ -185,4 +185,11 @@ public final class KEY {
 		public static final String JSON_DIS_START_TIME = "disStartTime";
 		public static final String JSON_FOLLOW_EACH = "followEach";
 	}
+
+	public static final class LOGIN{
+		public static final String status = "login_status";
+		public static final String login_id = "login_id";
+		public static final String login_info = "login_info";
+
+	}
 }

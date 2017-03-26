@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_white"
+                android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:id="@+id/preview_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <hssychargingpole.xpg.com.baidumapdemo.zxing.view.ViewfinderView
+            android:id="@+id/viewfinderview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-40dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_scan_qr_tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/h20"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:text="请扫一扫"
+                android:textColor="@color/text_cyan"
+                android:textSize="@dimen/h20"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/h40"
+                android:layout_marginRight="@dimen/h40"
+                android:text="请您对准说明书的设备二维码图像\n进行扫描，成功即进入绑定流程"
+                android:lines="2"
+                android:textColor="@color/text_cyan"
+                android:textSize="@dimen/h18"/>
+        </LinearLayout>
+
+        <ToggleButton
+            android:id="@+id/switch_onoff"
+            android:layout_width="@dimen/h40"
+            android:layout_height="@dimen/h40"
+            android:layout_centerHorizontal="true"
+            android:textOn=""
+            android:textOff=""
+            android:checked="false"
+            android:background="@drawable/light_on_off"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/h100"
+            android:drawingCacheQuality="low"/>
+
+        <Button android:id="@+id/open_images"
+                android:text="打开图库"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+</RelativeLayout>

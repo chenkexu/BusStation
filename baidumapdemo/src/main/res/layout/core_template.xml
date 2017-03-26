@@ -10,7 +10,6 @@
     tools:context=".core.BaseActivity"
     android:orientation="vertical">
 
-
     <android.support.design.widget.AppBarLayout
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -26,7 +25,6 @@
             <!--<include layout="@layout/layout_title_bar"/>-->
         </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
-
 
     <com.kennyc.view.MultiStateView
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -67,8 +65,8 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        app:backgroundTint="#30469b"
+        android:src="@mipmap/sign"
+        app:backgroundTint="@color/yellow"
         app:borderWidth="0dp"
         app:elevation="6dp"
         app:fabSize="normal"
@@ -77,5 +75,6 @@
         android:layout_marginRight="30dp"
         app:pressedTranslationZ="12dp"
         app:rippleColor="#a6a6a6" />
+
 </android.support.design.widget.CoordinatorLayout>
 

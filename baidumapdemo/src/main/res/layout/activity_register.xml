@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:gravity="center"
+              android:orientation="vertical">
+    <!--不要让EditText默认获取焦点-->
+
+    <LinearLayout
+        android:gravity="center"
+        android:id="@+id/content"
+        android:layout_width="@dimen/h280"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_tips1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/h20"
+            android:textColor="@color/grey"
+            android:text="手机号码将用于认证本人，以便您能即时收到充电信息" />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <hssychargingpole.xpg.com.baidumapdemo.view.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号"
+                android:drawableLeft="@drawable/login_icon_number"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLength="11"
+                android:textColorHint="@color/white"
+                android:textColor="@color/black"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h50"
+            android:layout_marginBottom="@dimen/h20"
+            android:layout_marginTop="@dimen/h20"
+            android:orientation="horizontal">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/vaild"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content">
+                <hssychargingpole.xpg.com.baidumapdemo.view.ClearEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="验证码"
+                    android:drawableLeft="@drawable/login_icon_number"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/black"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/get_valid_num"
+                android:layout_width="@dimen/h80"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_btn_water_blue_light_gray_round_small"
+                android:gravity="center"
+                android:text="获取验证码"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bind_function"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_bind_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/h5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/h5"
+                    android:text="绑定手机号的作用"
+                    android:textColor="@color/light_gray" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_bind_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey"
+                android:text="绑定手机号，可以更好地保护您的账号安全，也可即时接收充电提示消息及方便您与充电桩主联系。" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_top_or_bottom"
+        android:gravity="bottom|center"
+        android:orientation="horizontal"
+        android:padding="@dimen/w20">
+        <Button
+            android:id="@+id/next"
+            style="@style/btn_water_blue"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="下一步"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

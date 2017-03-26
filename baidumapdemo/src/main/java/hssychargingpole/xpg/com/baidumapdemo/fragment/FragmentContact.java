@@ -50,6 +50,7 @@ public class FragmentContact extends BaseFragment implements SwipeRefreshLayout.
 
 	@Override
 	public void builderView(View rootView) {
+
 		L.e("builderView执行了！！");
 		getAbstractActivity().setActionBarTitle("语言列表");
 //		tipInforLayout = (TipInfoLayout) rootView.findViewById(R.id.fl_panent_id_contact);

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/like_and_commend_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/like_and_comment_background"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_like_avatar_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_like_avatar_line"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/iv_points"
+            android:orientation="horizontal"
+            android:padding="5dp">
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/h4"
+            android:layout_centerVertical="true"
+            android:src="@drawable/youyiquan_detail"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/split_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/white"
+        android:visibility="gone"/>
+
+    <hssychargingpole.xpg.com.baidumapdemo.view.FixHeightListView
+        android:id="@+id/fhlv_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:focusable="false"
+        android:paddingLeft="5dp"
+        android:scrollbarSize="@null"
+        android:scrollbars="none"/>
+</LinearLayout>

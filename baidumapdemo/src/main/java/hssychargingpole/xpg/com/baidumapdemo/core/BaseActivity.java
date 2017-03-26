@@ -7,6 +7,7 @@ import android.support.annotation.IdRes;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.StringRes;
 import android.support.design.widget.CoordinatorLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.view.menu.MenuBuilder;
@@ -48,6 +49,8 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     private boolean mAllowFullScreen = false;
     private CoordinatorLayout coordinatorLayout;
     protected RadioGroup radioGroup;
+    protected FloatingActionButton floatingActionButton;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,9 +65,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
             T.show(getApplicationContext(),"请检查网络设置",2);
         }
 
-
         CoreUtil.addAppActivity(this);//把每一个打开的activity添加到App列表集合中，易于维护
-
         if(isTemplate){ //如果使用模板
             setContentView(R.layout.core_template);//带toolbar的activity
             initWidget();//初始化控件
@@ -72,11 +73,13 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
 
         if(this instanceof MainActivity){   //首页不需要返回键,需要radioGroup
             radioGroup.setVisibility(View.VISIBLE);
+            floatingActionButton.setVisibility(View.GONE);
         } else { //添加返回键
             if(getSupportActionBar()!=null){
                 getSupportActionBar().setDisplayHomeAsUpEnabled(true);  //给左上角图标的左边加上一个返回的图标
             }
             radioGroup.setVisibility(View.GONE);
+            floatingActionButton.setVisibility(View.GONE);
         }
     }
 
@@ -92,6 +95,7 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         setSupportActionBar(toolbar);
         mMultiStateView = (MultiStateView) findViewById(R.id.multiStateView);//主体模板中的提示语信息
         radioGroup = (RadioGroup) findViewById(R.id.rg_bottom);;//主体模板中的提示语信息
+        floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);;//主体模板中的提示语信息
 //        mMultiStateView = (MultiStateView) findViewById(R.id.multiStateView);//主体模板中的提示语信息
     }
 

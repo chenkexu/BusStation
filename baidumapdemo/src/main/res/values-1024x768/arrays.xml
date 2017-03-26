@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="hot_cities">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+        <item>武汉</item>
+        <item>天津</item>
+        <item>西安</item>
+        <item>南京</item>
+        <item>杭州</item>
+        <item>成都</item>
+        <item>重庆</item>
+    </string-array>
+
+    <!-- 订单action -->
+    <string-array name="action_strings">
+        　
+        <item>待确认</item>
+        　　
+        <item>桩主确认</item>
+        　　
+        <item>业主拒绝</item>
+        　　
+        <item>客户取消</item>
+        　　
+        <item>已充电</item>
+        　　
+        <item>已付款</item>
+        　
+        <item>已过期</item>
+        　　
+        <item>已评价</item>
+    </string-array>
+
+
+    <!-- 默认评价内容-->
+    <string-array name="default_evaluate_detail">
+        <item>很差，根本充不了电！</item>
+        <item>能充电，但充电环境差及设备老旧！</item>
+        <item>充电速度还可以，环境、服务有待跟进！</item>
+        <item>充电速度快，设备挺新，有便利设施，下次再来！</item>
+        <item>充电速度快，设备很新，便利设施很足，值得向大家推荐。</item>
+    </string-array>
+    <string-array name="total_evaluate_detail">
+        <item>充电不尽如人意,</item>
+        <item>充电有点小意外,</item>
+        <item>挺好,正常充电,</item>
+        <item>超乎想象,充电很顺利!</item>
+        <item>充电体验很棒!强烈推荐!</item>
+    </string-array>
+    <string-array name="env_evaluate_detail">
+        <item>环境一般,</item>
+        <item>环境一般,</item>
+        <item>有停车位,充电环境还可以,</item>
+        <item>地址很好找,充电位无人占用,</item>
+        <item>地址很好找,充电位无人占用,</item>
+    </string-array>
+    <string-array name="dev_evaluate_detail">
+        <item>根本充不了电,</item>
+        <item>根本充不了电,</item>
+        <item>充电设备有点老旧,</item>
+        <item>充电设备新建成,</item>
+        <item>充电设备新建成,</item>
+    </string-array>
+    <string-array name="per_evaluate_detail">
+        <item>充电速度与电桩类型不符。</item>
+        <item>充电速度与电桩类型不符。</item>
+        <item>充电速度还行。</item>
+        <item>充电速度令我满意。</item>
+        <item>充电速度令我满意。</item>
+    </string-array>
+</resources>

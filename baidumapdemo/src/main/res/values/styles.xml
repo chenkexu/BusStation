@@ -36,7 +36,13 @@
         <item name="android:windowIsTranslucent">true</item>
     </style>
 
-
+    <style name="text_gray_smallest">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/text_gray_dark</item>
+        <item name="android:textSize">@dimen/h12</item>
+    </style>
 
     <!-- 设置ActionBar菜单字体 -->
     <style name="ActionMenuTextStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Menu">
@@ -44,6 +50,17 @@
         <item name="android:textStyle">normal</item>
     </style>
 
+
+    <!--RadioButton样式-->
+    <style name="tab_booking_sex">
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">tab</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/h16</item>
+        <item name="android:singleLine">true</item>
+    </style>
 
     <!--图库界面的主题-->
     <style name="PhotoPickerTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -120,6 +137,21 @@
         <item name="android:orientation">vertical</item>
     </style>
 
+<!--横向列表的样式-->
+    <style name="main_menu_btn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">@dimen/h15</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:paddingLeft">@dimen/w18</item>
+        <item name="android:paddingRight">@dimen/w18</item>
+        <item name="android:textColor">@color/text_menu</item>
+        <item name="android:textSize">@dimen/h18</item>
+    </style>
 
 
     <!-- 列表用户头像的样式 -->
@@ -252,4 +284,35 @@
         <item name="android:textSize">@dimen/h12</item>
     </style>
 
+
+
+
+        <!--+++++++++++++circleDemo++++++++++++++++++++++++-->
+
+    <style name="social_pop_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+    <style name="comment_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <!-- 显示对话框时当前的屏幕是否变暗 -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="progress_style" parent="@android:style/Theme.Light.NoTitleBar">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+    </style>
 </resources>

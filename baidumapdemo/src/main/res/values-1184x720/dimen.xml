@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="input_box_width_big">@dimen/w280</dimen>
+    <dimen name="btn_width_big">@dimen/w280</dimen>
+    <dimen name="dimen.xmlweek_frame_width">@dimen/h1</dimen>
+    <dimen name="week_corner_radius">@dimen/h5</dimen>
+    <dimen name="top_height">@dimen/h50</dimen>
+    <dimen name="seekbar_padding">@dimen/w15</dimen>
+    <dimen name="pile_manager_image_size">@dimen/w63</dimen>
+</resources>

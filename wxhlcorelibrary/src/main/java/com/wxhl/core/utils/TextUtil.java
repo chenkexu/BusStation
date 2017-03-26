@@ -1,8 +1,8 @@
 package com.wxhl.core.utils;
 
-import org.w3c.dom.Text;
-
 import java.io.UnsupportedEncodingException;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * 文本工具类
@@ -10,6 +10,23 @@ import java.io.UnsupportedEncodingException;
  *
  */
 public class TextUtil {
+
+
+
+	public static boolean isChinese(String name) {
+		boolean isResult = false;
+		try {
+			String comp = "[\\u4e00-\\u9fa5]+";
+			Pattern pattern = Pattern.compile(comp);
+			Matcher matcher = pattern.matcher(name);
+			isResult = matcher.find();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		System.out.println("___________isResult = " + isResult);
+		return isResult;
+	}
+
 
 	/**
 	 * 字符串不能空

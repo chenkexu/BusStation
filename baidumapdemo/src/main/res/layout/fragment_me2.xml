@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_white"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/ll_userInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/h130"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_usericon"
+                android:layout_width="@dimen/h85"
+                android:layout_height="@dimen/h85"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/w8"
+                android:layout_marginTop="@dimen/h10"
+                android:padding="@dimen/h3"
+                android:scaleType="centerCrop"
+                android:src="@drawable/personal_touxiang" />
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_usericon"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:text="点击登录"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/h18" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/badge_view"
+            android:layout_width="@dimen/w40"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/h10"
+            android:layout_marginTop="@dimen/h20"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btn_message"
+                android:layout_width="@dimen/w30"
+                android:layout_height="@dimen/h30"
+                android:layout_gravity="right"
+                android:background="@drawable/personal_message" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <LinearLayout
+            android:id="@+id/llyt_me"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/h30"
+            android:background="@color/bg_white"
+            android:divider="@drawable/line1"
+            android:dividerPadding="@dimen/w5"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:showDividers="middle|beginning|end">
+
+         <LinearLayout
+            android:id="@+id/my_appoint_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h50"
+            android:background="@drawable/select_grey_white_click"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/h60"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/me_icon_order" />
+
+            <TextView
+                android:id="@+id/btn_order"
+                style="@style/main_menu_btn"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1.01"
+                android:gravity="left"
+                android:padding="0dp"
+                android:text="我的订单" />
+         </LinearLayout>
+
+          <ImageView
+              android:background="@drawable/line1"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"/>
+
+         <LinearLayout
+             android:id="@+id/wallet_rl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h50"
+            android:background="@drawable/select_grey_white_click"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/h60"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/personal_center_wallet" />
+
+            <TextView
+                android:id="@+id/btn_wallet"
+                style="@style/main_menu_btn"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="0dp"
+                android:text="我的钱包" />
+         </LinearLayout>
+          <ImageView
+              android:background="@drawable/line1"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"/>
+
+          <LinearLayout
+              android:id="@+id/circle_rl"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/h50"
+              android:background="@drawable/select_grey_white_click"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="@dimen/h60"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:src="@drawable/content_icon_round" />
+
+              <TextView
+                  android:id="@+id/btn_circle"
+                  style="@style/main_menu_btn"
+                  android:layout_width="0dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_weight="1"
+                  android:gravity="left"
+                  android:padding="0dp"
+                  android:text="个人中心" />
+          </LinearLayout>
+          <ImageView
+              android:background="@drawable/line1"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"/>
+          <LinearLayout
+              android:id="@+id/collect_rl"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/h50"
+              android:background="@drawable/select_grey_white_click"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="@dimen/h60"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:src="@drawable/me_icon_collection" />
+
+              <TextView
+                  android:id="@+id/btn_collect"
+                  style="@style/main_menu_btn"
+                  android:layout_width="0dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_weight="1"
+                  android:gravity="left"
+                  android:padding="0dp"
+                  android:text="我的收藏" />
+          </LinearLayout>
+          <ImageView
+              android:background="@drawable/line1"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"/>
+          <LinearLayout
+              android:id="@+id/ll_my_evaluate"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/h50"
+              android:background="@drawable/select_grey_white_click"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="@dimen/h60"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:src="@drawable/personal_center_comment" />
+
+              <TextView
+                  android:id="@+id/btn_evluate"
+                  style="@style/main_menu_btn"
+                  android:layout_width="0dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_weight="1"
+                  android:gravity="left"
+                  android:padding="0dp"
+                  android:text="我的评价" />
+          </LinearLayout>
+          <ImageView
+              android:background="@drawable/line1"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"/>
+          <LinearLayout
+              android:id="@+id/btn_setting_ll"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/h50"
+              android:background="@drawable/select_grey_white_click"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="@dimen/h60"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:src="@drawable/personal_center_site" />
+
+              <TextView
+                  android:id="@+id/btn_setting"
+                  style="@style/main_menu_btn"
+                  android:layout_width="0dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_weight="1"
+                  android:gravity="left"
+                  android:padding="0dp"
+                  android:text="我的设置" />
+          </LinearLayout>
+
+          <ImageView
+              android:background="@drawable/line1"
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"/>
+
+          <LinearLayout
+              android:id="@+id/about_app__rl"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/h50"
+              android:background="@drawable/select_grey_white_click"
+              android:orientation="horizontal">
+
+              <ImageView
+                  android:layout_width="@dimen/h60"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_vertical"
+                  android:src="@drawable/personal_center_about" />
+
+              <TextView
+                  android:id="@+id/about_app_tv"
+                  style="@style/main_menu_btn"
+                  android:layout_width="0dp"
+                  android:layout_gravity="center_vertical"
+                  android:layout_weight="1"
+                  android:gravity="left"
+                  android:padding="0dp"
+                  android:text="关于站级监控" />
+          </LinearLayout>
+
+      </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

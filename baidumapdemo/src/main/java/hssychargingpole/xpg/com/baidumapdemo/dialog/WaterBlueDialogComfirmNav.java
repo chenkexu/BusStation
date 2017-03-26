@@ -35,21 +35,6 @@ public class WaterBlueDialogComfirmNav extends BaseDialog{
 	private double desLat; //目的地经度
 	private double desLon; //目的地纬度
 
-	private class Navigation {
-		String name;
-		int iconId;
-		Navigation(String name, int iconId) {
-			super();
-			this.name = name;
-			this.iconId = iconId;
-		}
-	}
-
-	private final Navigation BAIDU = new Navigation("百度地图",
-			R.drawable.app_icon2);
-	private final Navigation GAODE = new Navigation("高德地图",
-			R.drawable.app_icon1);
-
 	public WaterBlueDialogComfirmNav(final Context context) {
 		super(context);
 		setContentView(R.layout.water_blue_dialog_list);
@@ -91,7 +76,6 @@ public class WaterBlueDialogComfirmNav extends BaseDialog{
 					dismiss();
 
 				} else if (adapter.getSelectedItem() == GAODE) {
-
 					//打开高德地图
 					LatLng ll = NavigationUtil.baidu2Gaode(new LatLng(desLat,
 							desLon));
@@ -103,6 +87,20 @@ public class WaterBlueDialogComfirmNav extends BaseDialog{
 		});
 	}
 
+	private class Navigation {
+		String name;
+		int iconId;
+		Navigation(String name, int iconId) {
+			super();
+			this.name = name;
+			this.iconId = iconId;
+		}
+	}
+
+	private final Navigation BAIDU = new Navigation("百度地图",
+			R.drawable.app_icon2);
+	private final Navigation GAODE = new Navigation("高德地图",
+			R.drawable.app_icon1);
 
 	private class NavigationAdapter extends EasyAdapter<Navigation> {
 

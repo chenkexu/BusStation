@@ -1,21 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="vertical">
+    <LinearLayout
+        android:background="@color/yellow"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
-
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="30dp"
+              android:layout_centerInParent="true">
 
     <TextView android:background="@color/accent_blue"
         android:text="报装"
         android:textSize="33sp"
-        android:layout_marginTop="@dimen/h88"
-        android:layout_centerHorizontal="true"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/install"/>
 
-    <Button android:id="@+id/buttonPanel"
+    <Button android:id="@+id/all_station"
+            android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="查看所有充电站"/>
 
-        android:text="nidashkhdksa"/>
-</RelativeLayout>
+    <Button android:id="@+id/bt_loginPage"
+            android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登录测试界面"/>
+
+    <Button android:id="@+id/btn_share"
+            android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="分享测试界面"/>
+    <Button android:id="@+id/okgo_test"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="okhtttp测试界面"/>
+
+
+    <TextView android:background="@color/accent_blue"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:id="@+id/show"/>
+
+    <Button android:id="@+id/codeTest"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="二维码测试界面"/>
+
+    <ImageView
+        android:src="@drawable/ic_launcher"
+        android:id="@+id/iv_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <Button
+                android:id="@+id/circle"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美食分享圈"/>
+        <Button
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美食分享圈"/>
+   </LinearLayout>
+</ScrollView>

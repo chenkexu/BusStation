@@ -48,7 +48,6 @@ public abstract class BaseFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         if(rootView==null){
             rootView = getRootView(inflater,container,savedInstanceState);
-
             builderView(rootView);
         }else{
             ViewGroup p = (ViewGroup) rootView.getParent();

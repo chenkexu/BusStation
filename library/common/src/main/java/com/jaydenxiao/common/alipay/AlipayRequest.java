@@ -2,7 +2,7 @@ package com.jaydenxiao.common.alipay;
 
 import android.app.Activity;
 
-import com.alipay.sdk.app.PayTask;
+
 
 /**
  * des:发起支付宝支付请求

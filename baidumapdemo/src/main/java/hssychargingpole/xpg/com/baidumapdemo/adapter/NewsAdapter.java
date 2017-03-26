@@ -4,13 +4,12 @@ import android.text.TextUtils;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
-
 import java.util.List;
-
 import hssychargingpole.xpg.com.baidumapdemo.R;
 import hssychargingpole.xpg.com.baidumapdemo.bean.featured.FeaturedVo;
 import hssychargingpole.xpg.com.baidumapdemo.core.AbstractActivity;
 import hssychargingpole.xpg.com.baidumapdemo.view.RoundImageView;
+
 
 
 /**
@@ -47,10 +46,7 @@ public class NewsAdapter extends BaseQuickAdapter<FeaturedVo> {
          baseViewHolder.setText(R.id.tv_watch,featuredVo.getWatches_count()+"");
          baseViewHolder.setText(R.id.tv_star,featuredVo.getStars_count()+"");
          baseViewHolder.setText(R.id.tv_fork,featuredVo.getForks_count()+"");
-
-
          String language = featuredVo.getLanguage();
-
 
         if (TextUtils.isEmpty(language)) {
             baseViewHolder.setVisible(R.id.tv_language,false);

@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+
+              android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:orientation="vertical"
+                  android:padding="25dip"
+                  android:layout_marginTop="@dimen/h100">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <hssychargingpole.xpg.com.baidumapdemo.view.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请输入手机号"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textColorHint="@color/white"
+                android:textColor="@color/black"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <hssychargingpole.xpg.com.baidumapdemo.view.ClearEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:ems="10"
+                android:hint="请输入密码"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button android:id="@+id/bt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/d_btn_bg"
+                android:enabled="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="登录"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/iv_weixin_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/btn_forgetPwd"
+            android:layout_marginTop="@dimen/h56"
+            android:src="@drawable/login_weixin"/>
+
+        <ImageView
+            android:id="@+id/iv_qq_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btn_createAccount"
+            android:layout_marginTop="@dimen/h56"
+            android:src="@drawable/login_qq"/>
+
+        <Button
+            android:id="@+id/btn_createAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btn_forgetPwd"
+            android:layout_alignBottom="@+id/btn_forgetPwd"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_icon_register"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/h10"
+            android:text="注册用户"
+            android:textColor="#8EAFAA"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_forgetPwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="48dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/login_icon_forget"
+            android:drawablePadding="10dp"
+            android:padding="@dimen/h10"
+            android:text="忘记密码"
+            android:textColor="#8EAFAA"
+            android:layout_below="@+id/iv_weixin_login"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="48dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

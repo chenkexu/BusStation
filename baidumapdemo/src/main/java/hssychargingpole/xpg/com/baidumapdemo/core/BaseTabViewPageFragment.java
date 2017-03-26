@@ -16,8 +16,6 @@ import java.util.List;
 import hssychargingpole.xpg.com.baidumapdemo.R;
 import hssychargingpole.xpg.com.baidumapdemo.adapter.ViewpagerAdapter;
 
-
-
 /**
  *
  */
@@ -26,7 +24,6 @@ public abstract class BaseTabViewPageFragment extends BaseFragment {
     private TabLayout tabLayout;
 
     private ViewPager viewPager;
-
     private List<Fragment> fragmentList;
     private List<String> tagList;
 

@@ -1,7 +1,6 @@
 package hssychargingpole.xpg.com.baidumapdemo.activity;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -16,7 +15,7 @@ import hssychargingpole.xpg.com.baidumapdemo.R;
 import hssychargingpole.xpg.com.baidumapdemo.core.AbstractActivity;
 import hssychargingpole.xpg.com.baidumapdemo.fragment.FragmentContact;
 import hssychargingpole.xpg.com.baidumapdemo.fragment.FragmentFind;
-import hssychargingpole.xpg.com.baidumapdemo.fragment.FragmentMe;
+import hssychargingpole.xpg.com.baidumapdemo.fragment.FragmentMe2;
 import hssychargingpole.xpg.com.baidumapdemo.fragment.FragmentWeixin;
 
 public class MainActivity extends AbstractActivity {
@@ -26,7 +25,7 @@ public class MainActivity extends AbstractActivity {
     private ViewPager viewPager;
     private String[] titles = {"微信","通讯录","发现","我的"};
     private long start;
-    private FloatingActionButton floatingActionButton;
+
 
 
 
@@ -52,8 +51,6 @@ public class MainActivity extends AbstractActivity {
         getToolbar().setLogo(R.mipmap.ic_launcher);
 //        setActionBarTitle("");
         viewPager = (ViewPager) findViewById(R.id.viewPager);
-
-        floatingActionButton = (FloatingActionButton) findViewById(R.id.fab);
         floatingActionButton.setOnClickListener(this);
 
         fragments = new Fragment[4];
@@ -73,7 +70,7 @@ public class MainActivity extends AbstractActivity {
                             fragments[location] = new FragmentFind();
                             break;
                         case 3:
-                            fragments[location] = new FragmentMe();
+                            fragments[location] = new FragmentMe2();
                             break;
                         default:
                             break;
@@ -110,8 +107,6 @@ public class MainActivity extends AbstractActivity {
 
             }
         });
-
-
 
         //radioGroup的改变的监听
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {

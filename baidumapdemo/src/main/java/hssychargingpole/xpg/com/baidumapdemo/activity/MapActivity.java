@@ -558,17 +558,6 @@ public class MapActivity extends AppCompatActivity implements View.OnClickListen
         }
     }
 
-    private long exitTime;
 
-    @Override
-    public void onBackPressed() {
-        long nowTime = System.currentTimeMillis();
-        if ((nowTime - exitTime) <= 2000) {
-            super.onBackPressed();//代表退出应用
-        } else {
-            Toast.makeText(this, "再按一次，退出应用", Toast.LENGTH_SHORT).show();
-            exitTime = nowTime;
-        }
-    }
 
 }

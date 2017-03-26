@@ -180,8 +180,7 @@ public class Main2Activity extends AbstractActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(resultCode == RESULT_OK) {
             switch (requestCode) {
-                // 选择照片
-                case REQUEST_CAMERA_CODE:
+                case REQUEST_CAMERA_CODE:// 选择照片
                     ArrayList<String> list = data.getStringArrayListExtra(PhotoPickerActivity.EXTRA_RESULT);
                     Log.d(TAG, "list: " + "list = [" + list.size() + list.get(0));
 
@@ -199,12 +198,14 @@ public class Main2Activity extends AbstractActivity {
                     break;
 
                 case PHOTO_REQUEST_CUT: { //裁剪返回的最终的结果
-                    Bitmap bm = BitmapUtil.limitSize(cropPath, 1080);
+                    Bitmap bm = BitmapUtil.limitSize(cropPath, 1080);//根据路径获得图片并压缩返回bitmap用于显示
                     if (bm != null) {
                         ivAddIcon.setVisibility(View.GONE);
                         ivPicture.setVisibility(View.VISIBLE);
                         path = SDKPICPATH + getNowTime() + ".jpeg";
+
                         path = BitmapUtil.save(path, bm, Bitmap.CompressFormat.JPEG, 100);
+
                         Log.i("PHOTO_REQUEST_CUT", "图片大小： " + bm.getByteCount() + "");
                         Log.i("PHOTO_REQUEST_CUT", "图片长宽： " + bm.getWidth() + "---" + bm.getHeight());
                         bm.recycle();
@@ -215,7 +216,7 @@ public class Main2Activity extends AbstractActivity {
                             .error(R.mipmap.default_error)
                             .centerCrop()
                             .crossFade()
-                            .into(ivPicture);  //显示最终图片
+                            .into(ivPicture);  //显示最终图片id
                     } else {
                         cropPath = null;
                         ToastUtil.show(this, "图片数据错误,请重新选择!");

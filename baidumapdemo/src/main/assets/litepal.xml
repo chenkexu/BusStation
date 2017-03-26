@@ -3,10 +3,12 @@
     <!--数据库名字-->
     <dbname value="stationDB" />
     <!--数据库版本-->
-    <version value="2" />
+    <version value="4" />
     <list>
         <!--根据model映射创建表-->
         <mapping class="hssychargingpole.xpg.com.baidumapdemo.bean.ChargeStation" />
+        <mapping class="hssychargingpole.xpg.com.baidumapdemo.bean.LoginInfo" />
+
     </list>
     <!--将数据库文件存放在sd卡，调试时使用（internal，external）-->
     <!--<storage value="external" />-->

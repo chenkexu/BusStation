@@ -4,21 +4,12 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#3F51B5</color>
 
+    <color name="page_back">#fff2f2f2</color>
+    <color name="logo_text_color">#ff7f7f7f</color>
 
-
-
-
-
-
-
+    <color name="login_with_other_plat_text_color">#ff383838</color>
+    <color name="dialog_white_bg">#fbfbfb</color>
     <color name="photopicker_background">#181819</color>
-
-
-
-
-
-
-
     <!-- app base color -->
     <color name="water_blue">#00b4ae</color>
     <color name="chart_blue_bg">#0ABFB9</color>
@@ -179,7 +170,7 @@
     <color name="darkblue">#00008b</color><!--暗蓝色 -->
     <color name="navy">#000080</color><!--海军色 -->
     <color name="black">#000000</color><!--黑色 -->
-    <color name="transparent">#0000</color><!-- 透明 -->
+
     <color name="transparent2">#8000</color><!-- 透明 -->
 
     <!-- 上传图片添加的颜色 -->
@@ -308,5 +299,26 @@
     <color name="grid_item_text_color">#2E2E2E</color>
     <color name="city_text_background_click">#ACA8A3</color>
     <color name="select_city_activity_split_line_color">#CFCBC6</color>
+
+
+
+    <!--==============circleDemo动态==========-->
+    <color name="praise_item_default">#333333</color>
+    <color name="praise_item_selector_default">#cccccc</color>
+    <color name="praise_item">#8290AF</color>
+    <color name="default_clickable_color">#cccccc</color>
+    <color name="basic_color_primary">#373b3e</color>
+    <color name="color_8290AF">#8290AF</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_aeaeae">#aeaeae</color>
+    <color name="im_social_dig_name_bg">#DDDDDD</color>
+    <color name="im_font_color_text_hint">#abb1b6</color>
+    <color name="im_line_color">#dadada</color>
+    <color name="name_selector_color">#cccccc</color>
+    <color name="bg_no_photo">#EEEEEE</color>
+    <color name="title_bg">#373B3E</color>
+    <color name="video_bg">#ededed</color>
+
+
 
 </resources>
